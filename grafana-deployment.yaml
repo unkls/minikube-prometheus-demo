@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -22,7 +22,7 @@ spec:
         name: grafana
     spec:
       containers:
-      - image: grafana/grafana:4.6.3
+      - image: grafana/grafana:5.4.3
         imagePullPolicy: IfNotPresent
         name: grafana
         ports:
